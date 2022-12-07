@@ -1,0 +1,6 @@
+---
+- name: Set up django app
+  hosts: app
+  become: true
+  roles:
+    - app
