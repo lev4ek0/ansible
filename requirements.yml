@@ -2,3 +2,13 @@
   scm: git
   version: master
   name: docker-role
+
+- src: https://gitlab.com/lev4ek0-ansible-roles/django-role.git
+  scm: git
+  version: master
+  name: django-role
+
+- src: https://gitlab.com/lev4ek0-ansible-roles/nginx-role.git
+  scm: git
+  version: master
+  name: nginx-role

@@ -1,6 +1,8 @@
 ---
 - name: Set up docker
-  hosts: app
+  hosts: web
   become: true
   roles:
     - docker-role
+    - nginx-role
+    - django-role
