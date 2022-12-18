@@ -1,0 +1,13 @@
+- name: Install dependencies
+  become: yes
+  apt:
+    name:
+      - git
+      - python3-pip
+    state: present
+    update_cache: yes
+
+- name: Clone github repo
+  ansible.builtin.git:
+    repo: 'https://github.com/mdn/django-locallibrary-tutorial.git'
+    dest: /home/vagrant/app
