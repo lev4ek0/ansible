@@ -1,0 +1,8 @@
+- name: Check is docker installed
+  shell: command -v docker >/dev/null 2>&1
+  register: is_docker_installed
+  ignore_errors: yes
+
+- name: Install docker
+  ansible.builtin.shell: cd ~ && curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
+  when: is_docker_installed.rc == 127  # returns pc 0 if installed or 127 if not
