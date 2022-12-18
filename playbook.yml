@@ -1,5 +1,5 @@
 ---
-- name: Set up docker
+- name: Set up django app
   hosts: web
   become: true
   roles:
