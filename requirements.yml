@@ -1,0 +1,4 @@
+- src: https://gitlab.com/lev4ek0/docker-role.git
+  scm: git
+  version: master
+  name: docker-role
