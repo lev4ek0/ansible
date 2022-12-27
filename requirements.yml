@@ -12,3 +12,8 @@
   scm: git
   version: master
   name: nginx-role
+
+- src: https://gitlab.com/lev4ek0-ansible-roles/openvpn.git
+  scm: git
+  version: master
+  name: openvpn-role

@@ -1,8 +1,6 @@
 ---
-- name: Set up django app
-  hosts: web
+- name: Set up openvpn server
+  hosts: openvpn
   become: true
   roles:
-    - docker-role
-    - nginx-role
-    - django-role
+    - openvpn-role
